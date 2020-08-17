@@ -1,0 +1,248 @@
+html,
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: auto;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+.invoice-card {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.invoice-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #ff721b;
+}
+.details-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.invoice-userdetails {
+  color: #fff;
+  margin-top: 20px;
+}
+.invoice-address {
+  color: #fff;
+  margin: 20px 0;
+}
+.invoice-subcontent {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px 30px;
+}
+.subcontent-address {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.invoice-number > p:nth-child(3) {
+  margin-top: 20px;
+}
+.invoice-total > p:nth-child(2) {
+  font-size: 36px;
+  color: #222;
+  font-weight: 700;
+}
+.invoice-content {
+  margin: 20px 30px;
+  border-top: 3px solid #222;
+}
+.item-unit {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  color: #222;
+  padding-top: 20px;
+  font-size: 12px;
+}
+.item-container {
+  padding: 2px 0;
+}
+.item-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 12px;
+}
+.item-content-description > p:nth-child(2) {
+  font-size: 13px;
+  color: gray;
+}
+.item-content-children {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.item-cost {
+  margin-left: 1px;
+}
+.item-quantity {
+  margin-left: 1px;
+}
+.item-amount {
+  margin-right: 3px;
+}
+.total-items {
+  display: flex;
+  justify-content: flex-end;
+}
+.total-items-container {
+  width: 100%;
+  padding: 20px 0;
+}
+.total-items-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+.total-items-content > p:nth-child(1) {
+  font-weight: 800;
+}
+.invoice-footer {
+  padding: 30px;
+}
+.invoice-footer-child {
+  display: flex;
+  justify-content: flex-start;
+}
+.grey-format {
+  color: gray;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+.button {
+  display: inline-block;
+  font-family: "Poppins", Arial, sans-serif;
+  font: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  color: #222;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.55rem 2rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+.button--orange {
+  background-color: #ff721b;
+  color: #fff;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 604px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .invoice-header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #ff721b;
+  }
+  .details-container {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .invoice-userdetails {
+    margin-top: 0;
+  }
+  .invoice-address {
+    margin: 0 0;
+  }
+  .invoice-subcontent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 40px 30px;
+  }
+  .subcontent-address {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .item-header {
+    font-size: 16px;
+  }
+  .item-unit {
+    font-size: 16px;
+  }
+  .item-content {
+    font-size: 16px;
+  }
+
+  .total-items-container {
+    width: 28%;
+    padding: 20px 0;
+  }
+  .item-quantity {
+    margin-left: 20px;
+  }
+}
+.pepperest-logo {
+  width: 200px;
+  object-fit: contain;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
